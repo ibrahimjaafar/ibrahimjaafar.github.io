@@ -28,7 +28,9 @@ body {
   line-height: 30px;
   color: #333;
   margin-top: 100px;
+
 }
+
 * {
     box-sizing: border-box;
 }
@@ -62,7 +64,8 @@ background-color:#333;
 .ab{
 	text-align: center;
 	box-shadow: 0px 0px 0.5px #888888;
-	background-color:#eee;
+	background-color:#111111;
+	color: #eeeeee;
 }
 .rr {
 	
@@ -179,9 +182,17 @@ background-color:#333;
 
 .pic {
 box-shadow: 1px 6px 1px #888888;
+height: 500px;
 }
 
+.git{
+	background: url(https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-256.png) center no-repeat;
+    text-indent: -9999px;
+    display: block;
+    width: 36px;
+    height: 36px;
 
+}
 
 ul {
   margin: 0;
