@@ -242,7 +242,7 @@ nav  li:before {
 	}
    
 
-nav  li a {
+nav  li a,a {
       
     transition: all 0.5s;
     color: #333;
@@ -252,7 +252,7 @@ nav  li a {
     opacity: 1; 
 		
 	}
-nav  li a:hover {
+nav  li a:hover, a:hover {
     opacity: .5; 
 }
 .opac a{
