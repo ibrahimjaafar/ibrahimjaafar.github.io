@@ -1,10 +1,10 @@
+body,html{
+	 margin:0;
+  padding:0;
 
-html,
-
-header { 
-    display: block;
-	 text-align: center;
 }
+
+
 .header-1{
  border-bottom: 2px solid #eee;
  
@@ -17,6 +17,8 @@ header {
   line-height: 30px;
   color: #fff;
   margin-top: 100px;
+   margin:0;
+  padding:0;
 }
 .cll {
 	background-color:#000;
@@ -28,7 +30,8 @@ body {
   line-height: 30px;
   color: #333;
   margin-top: 100px;
-
+ margin:0;
+  padding:0;
 }
 
 * {
@@ -64,11 +67,15 @@ background-color:#333;
 .ab{
 	text-align: center;
 	box-shadow: 0px 0px 0.5px #888888;
-	background-color:#111111;
+	background-color:#E5342C;
 	color: #eeeeee;
-}
-.rr {
+	width:100%;
 	
+	position:relative;
+	
+}
+h1 {
+ text-align: center
 }
 .lt{
 	
@@ -139,6 +146,13 @@ background-color:#333;
     .col-c-10 {width: 83.33%;}
     .col-c-11 {width: 91.66%;}
     .col-c-12 {width: 100%;}
+	#introName {
+    margin-top: 3%;
+    font-size: 5rem;
+    margin-bottom: 2%;
+
+	
+}
 }
 @media only screen and (min-width: 600px) {
     /* For tablets: */
@@ -154,6 +168,11 @@ background-color:#333;
     .col-m-10 {width: 83.33%;}
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
+		#introName {
+    margin-top: 3%;
+ 
+	
+}
 }
 .row::after {
     content: "";
@@ -181,31 +200,23 @@ background-color:#333;
 }
 
 .pic {
-box-shadow: 1px 6px 1px #888888;
-height: 500px;
+ border: 1px solid #888888;
+width: 70%;
+padding: 100px;
+margin: 50px;
+}
+.languages li{
+display:inline-block;
+background-color:#E5342C;
+padding:5px 7px;
+border-radius:5px;
+font-weight:300;
+color:#FFF;
+text-transform:uppercase;
 }
 
-.git{
-	background: url(https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-256.png) center no-repeat;
-    text-indent: -9999px;
-    display: block;
-    width: 36px;
-    height: 36px;
 
-}
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  font-size: 14px;
-  line-height: 20px; }
-  ul > li {
-    padding-left: 20px; }
-    ul > li:before {
-      content: '-';
-      display: inline-block;
-      text-indent: -20px; }
 
 p {
   font-family: "PT Serif", serif;
@@ -225,35 +236,10 @@ p {
 .winner:hover{
 color:white;
 }
-.pull-right {
-  float: right; }
 
 
-nav {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 3;
-  padding: 45px 50px 0; 
-  box-shadow: 1px 1px 1px #000000;
-  background-color: #eee;
-  }
 
-
-  
- 
-nav li {
-    display: inline-block;
-    font-size: 17px; 
-	}
- 
-nav  li:before {
-    content: none; 
-	}
-   
-
-nav  li a,a {
+a {
       
     transition: all 0.5s;
     color: #333;
@@ -281,3 +267,44 @@ footer {
     position: fixed;
 }
 
+#intro {
+    text-align: center;
+    height: 100vh;
+	width:100%;
+	background-color:#E5342C;
+}
+
+#intro:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+#introWrap {
+  
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#introName {
+    margin-top: 18%;
+    font-size: 5rem;
+    margin-bottom: 2%;
+
+	
+}
+#introDownArrow {
+    display: inline-block;
+    color: white;
+    margin-top: 5%;
+    font-size: 4rem;
+    cursor: pointer;
+}
+.introAnchor {
+    font-size: 3rem;
+    margin-right: 1%;
+    margin-left: 1%;
+    color: white;
+    float: bottom;
+}
