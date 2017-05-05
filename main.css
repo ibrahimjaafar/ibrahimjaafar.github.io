@@ -1,7 +1,7 @@
 body,html{
 	 margin:0;
   padding:0;
-
+background-color: #FFDB51;
 }
 
 
@@ -38,8 +38,30 @@ body {
     box-sizing: border-box;
 }
 
-
-
+.left {
+	float:left;
+	text-align: center;
+	border: 1px solid #ccc;
+	background-color: #FFDB51;;
+	
+	margin: 1em;
+	padding: 1em;
+	margin-left: 5em;
+		border-radius: 50px;
+	
+	transition: background-color 1s, border 1s, border-radius 1s;
+}
+.left:hover{
+	border: 1px solid black;
+	background-color: #FFC833;
+	border-radius: 0px;
+}
+.right{
+	float:right;
+}
+    .circle {
+        border-radius: 10%;
+    }
 .pf{
 	font-size:300px;
 }
@@ -113,8 +135,7 @@ h1 {
 	}
 .pic {
 font-size: 1.2rem;
-width:auto;
-height:auto;
+
 padding: 0px;
 margin:0px;
 }
