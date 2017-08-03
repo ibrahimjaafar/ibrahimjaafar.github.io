@@ -245,7 +245,7 @@ p {
 a {
       
     transition: all 0.5s;
-    color: #333;
+    color: #f00;
     text-decoration: none;
    
     font-weight: bold;
