@@ -1,0 +1,44 @@
+.introAnchor {
+    font-size: 5rem;
+    margin-right: 1%;
+    margin-left: 1%;
+    color: #f00;
+    float: bottom;
+}
+.gitlink {
+    font-size: 3rem;
+    margin-right: 5%;
+    margin-left: 1%;
+	color: #f00;
+    float: bottom;
+}
+a {
+    transition: all 0.5s;
+	color: #f00;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 1;
+}
+a:hover{
+	color: #f00;
+	  opacity: .80;
+    text-decoration: none;
+}
+.languages li{
+display:inline-block;
+background-color:#E5342C;
+padding:1px 5px;
+border-radius:5px;
+font-weight:200;
+color:#FFF;
+
+text-transform:uppercase;
+}
+.jumbotron
+{
+	background-color: #111;
+	
+}
+.text-center{
+	color: #fff;
+}

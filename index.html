@@ -1,99 +1,138 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Main menu</title>
+	<title>Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<style>
 
-<link href="main.css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script>
-		$(document).ready(function(){
-			$("a").on('click', function(event) {
-				if (this.hash !== "") {
-				event.preventDefault();
-				var hash = this.hash;
-				$('html, body').animate({
-				scrollTop: $(hash).offset().top
-				}, 800, function(){
-				window.location.hash = hash;
-				});
-				} 
-			});
-		});
-		</script>
-	</head>
-	<body>
-
-
-
-
-
-	 <div id = "intro" class = "col-12 col-c-12 col-m-12 ab">
-                    <div id = "introWrap">
-                        <h1 id = "introName">Ibrahim Jaafar</h1>
-                        <h3 id = "introInfo">Computer Science Graduate (June 2017)</h3>
-						<p>I am most experienced in web application developing, 
-						however<br> I am very interested in other opportunities, such as technical<br> writer, business analyst, general developer, and other tech roles. </p>
-                        <a target = "_blank" class = "displayblock introAnchor" href = "https://github.com/Ibrahimjaafar"><i title = "GitHub" class = "fa fa-github main_icon"></i></a>
-                       
-                        <a class = "displayblock introAnchor" href = "mailto:ibrahim.jaafar@ryerson.ca"><i title = "Contact Me!" class = "fa fa-envelope main_icon"></i></a>
-						<a class="displayblock"href="#down"><i id = "introDownArrow" class = "fa fa-arrow-circle-down" title = "Projects"></i></a>
-                    </div>
-                </div>
-
-
-<div class="proj">
-<section class="row rr "id="down">
-<h1>More completed and ongoing projects can be found <a href="http://github.com/ibrahimjaafar">here!</a> </h1> 
-	</section>
-  <!-- Activities -->
-
-<section class="row" >
+	@media screen and (min-width: 480px) {
+	.a, .b{
+	padding-left:20%;
+	padding-right:20%;
+	}
+	}
 	
-	<section class="col-1 left first pic">
-	<img src="images/weather.PNG" alt=" ">
-		<p>Weather application built using pure javascript and html/css. Retrieves data from openweathermap.</p>  
-		<a target = "_blank" class = "gitlink" href = "https://github.com/ibrahimjaafar/Weather"><i title = "View on GitHub" class = "fa fa-github main_icon"></i></a>
-		<ul class="languages">
-		<li>HTML</li>
-		<li>CSS</li>
-		<li>Bootstrap</li>
-		<li>Javascript</li>
-		</ul>
-	</section>
-  
-  
-  
-	<section class="col-1 left right pic">
-		<img src="images/encr.PNG" alt=" ">
-		<p>An ecnryption/decryption application which utilizes HMAC MD5, and Hill Cipher 3x3. </p> 
-<a target = "_blank" class = "gitlink" href = "https://github.com/ibrahimjaafar/Encrypt-Decrypt"><i title = "View on GitHub" class = "fa fa-github main_icon"></i></a>
-		<ul class="languages">
-			<li>Java</li>
+	</style>
+
+</head>
+
+<body>
+
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>Ibrahim Jaafar</h1>      
+			<p>Aspiring Developer</p>
+			<a target = "_blank" class = "displayblock introAnchor" href = "https://github.com/Ibrahimjaafar"><i title = "GitHub" class = "fa fa-github main_icon"></i></a>
+			<a class = "displayblock introAnchor" href = "mailto:ibrahim.jaafar@ryerson.ca"><i title = "Contact Me!" class = "fa fa-envelope main_icon"></i></a>
 			
-		</ul>
-	</section>
- 
- 
-	<section class="col-1 left pic">
-	<img src="images/goog.PNG" alt=" ">
-		<p>Businesess Application called 'The Investors Report'. Displays stock information in various visuals, similar to yahoo finance.</p>
-<a target = "_blank" class = "gitlink" href = "http://github.com/ibrahimjaafar/investors-report"><i title = "View on GitHub" class = "fa fa-github main_icon"></i></a>
-		<ul class="languages">
-		<li>Javascript</li>
-		<li>HTML</li>
-		<li>CSS</li>
-		<li>JQuery</li>
-		<li>Nodejs</li>
-	</ul>
-	</section>
-</section>
- 
+		</div>
+	</div>
 
-</div>
+	<div class="container">
+	 <h3>These are some projects that I've worked on. For more click <a href="http://github.com/ibrahimjaafar">here!</a> </h3><hr>
+	
 
+	<div class="container col-md-6 col-sm-12">
+	     
+	   <div class="thumbnail">
+        <div class="row">
+		<br>
+            <div class="col-md-6">
+              
+                    <img class="img-responsive" src="images/weather.png" >
+					<i> Image Preview</i>
+            </div>
+            <div class="col-md-6">
+                <div class="caption">
+                   <h4>Weather Application</h4>
+                    <p>Developed a fully functional responsive weather application.
+						Takes in a city as input and displays the current weather report including the weather for the next 24 hours in 3-hour intervals along with a 5-day weather forecast.
+					</p>
+                     		<a target = "_blank" class = "gitlink" href = "https://github.com/ibrahimjaafar/Weather"><i title = "View on GitHub" class = "fa fa-github main_icon"></i></a>
 
+                </div>
+				
+            </div>
+			<ul class="languages ">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Bootstrap</li>
+						<li>Javascript</li>
+					</ul>
+        </div>
+    </div>
+	</div>
+
+	<div class="container col-md-6 col-sm-12">
+	     
+	   <div class="thumbnail">
+        <div class="row">
+		<br>
+            <div class="col-md-6">
+              
+                    <img class="img-responsive" src="images/goog.png" >
+					<i> Image Preview</i>
+            </div>
+            <div class="col-md-6">
+                <div class="caption">
+                   <h4>Invest-Report Application</h4>
+                    <p>Worked in a team as lead developer to design, implement a stock report application written in Javascript.
+						First page is a search engine which takes a company name and displays stock data using graphs generated by chartjs. 
+
+					</p>
+                     		<a target = "_blank" class = "gitlink" href = "https://github.com/ibrahimjaafar/investors-report"><i title = "View on GitHub" class = "fa fa-github main_icon"></i></a>
+
+                </div>
+				
+            </div>
+			<ul class="languages ">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JQuery</li>
+						<li>Javascript</li>
+					</ul>
+        </div>
+    </div>
+	</div>
+	
+	<div class="container col-md-6 col-sm-12">
+	     
+	   <div class="thumbnail">
+        <div class="row">
+		<br>
+            <div class="col-md-6">
+              
+                    <img class="img-responsive" src="images/encr.png" >
+					<i> Image Preview</i>
+            </div>
+            <div class="col-md-6">
+                <div class="caption">
+                   <h4>Encrypt-Decrypt</h4>
+                    <p>An ecnryption/decryption application which utilizes HMAC MD5, and Hill Cipher 3x3 encryption algorithms. 
+						Developed a GUI to display the encryption method.
+
+					</p>
+                     		<a target = "_blank" class = "gitlink" href = "https://github.com/ibrahimjaafar/investors-report"><i title = "View on GitHub" class = "fa fa-github main_icon"></i></a>
+
+                </div>
+				
+            </div>
+			<ul class="languages ">
+						<li>Java</li>
+						
+					</ul>
+        </div>
+    </div>
+	</div>
+	
+	</div>
+	
+
+	
 
 </body>
-</html>
