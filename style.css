@@ -42,3 +42,9 @@ text-transform:uppercase;
 .text-center{
 	color: #fff;
 }
+@media screen and (min-width: 480px) {
+	.a, .b{
+	padding-left:20%;
+	padding-right:20%;
+	}
+	}
