@@ -5,7 +5,10 @@
     color: #f00;
     float: bottom;
 }
-
+body{
+	background-color: #286090;
+	color: #fff;
+}
 .gitlink {
     font-size: 3rem;
     margin-right: 5%;
@@ -15,14 +18,14 @@
 }
 a {
     transition: all 0.5s;
-	color: #f00;
+	color: #fff;
     text-decoration: none;
     font-weight: bold;
     opacity: 1;
 }
 a:hover{
-	color: #f00;
-	  opacity: .80;
+	
+	opacity: .80;
     text-decoration: none;
 }
 .languages li{
